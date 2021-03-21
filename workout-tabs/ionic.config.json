@@ -1,0 +1,7 @@
+{
+  "name": "workout-tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

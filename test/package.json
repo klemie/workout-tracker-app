@@ -1,9 +1,8 @@
 {
-  "name": "workout-tabs",
+  "name": "test",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@capacitor/core": "2.4.7",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.9",
@@ -59,9 +58,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@capacitor/cli": "2.4.7"
   },
   "description": "An Ionic project"
 }

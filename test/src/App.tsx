@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonCardContent, IonContent, IonHeader, IonRouterOutlet, IonCard, IonCardHeader, IonCardTitle} from '@ionic/react';
+import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -23,31 +23,17 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 const App: React.FC = () => (
-  // <IonApp>
-  //   <IonReactRouter>
-  //     <IonRouterOutlet>
-  //       <Route exact path="/home">
-  //         <Home />
-  //       </Route>
-  //       <Route exact path="/">
-  //         <Redirect to="/home" />
-  //       </Route>
-  //     </IonRouterOutlet>
-  //   </IonReactRouter>
-  // </IonApp>
   <IonApp>
-      <IonContent>
-     
-          <IonCard color="dark" class="ion-padding">
-        
-            <IonCardTitle>
-              
-            </IonCardTitle>
-            <IonCardContent>
-
-            </IonCardContent>
-          </IonCard>
-      </IonContent>
+    <IonReactRouter>
+      <IonRouterOutlet>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+      </IonRouterOutlet>
+    </IonReactRouter>
   </IonApp>
 );
 

@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonCardContent, IonContent, IonHeader, IonRouterOutlet, IonCard, IonCardHeader, IonCardTitle} from '@ionic/react';
+import { IonApp, IonCardContent, IonContent, IonHeader, IonRouterOutlet, IonCard, IonCardHeader, IonCardTitle, IonGrid, IonRow} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,31 +22,12 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 const App: React.FC = () => (
-  // <IonApp>
-  //   <IonReactRouter>
-  //     <IonRouterOutlet>
-  //       <Route exact path="/home">
-  //         <Home />
-  //       </Route>
-  //       <Route exact path="/">
-  //         <Redirect to="/home" />
-  //       </Route>
-  //     </IonRouterOutlet>
-  //   </IonReactRouter>
-  // </IonApp>
   <IonApp>
-      <IonContent>
-     
-          <IonCard color="dark" class="ion-padding">
-        
-            <IonCardTitle>
-              
-            </IonCardTitle>
-            <IonCardContent>
+    <IonGrid>
+      <IonRow>
 
-            </IonCardContent>
-          </IonCard>
-      </IonContent>
+      </IonRow>
+    </IonGrid>
   </IonApp>
 );
 

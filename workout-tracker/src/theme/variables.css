@@ -234,3 +234,26 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
+
+.description{
+  width: 50%;
+}
+.header{
+  font-family: Lato;
+  font-size: 40px;
+  padding-top: 50px;
+  /* padding-bottom: 20px; */
+}
+.size{
+  width:100px;
+}
+ion-button{
+  --background: rgb(179,220,61);
+}
+#btn1{
+  --background: rgb(225,129,75);
+}
+#btn2{
+  --background: rgb(82,173,224);
+
+}

@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonCardContent, IonContent, IonHeader, IonRouterOutlet, IonCard, IonCardHeader, IonCardTitle, IonGrid, IonRow} from '@ionic/react';
+import { IonApp, IonCardContent, IonContent, IonHeader, IonRouterOutlet, IonCard, IonCardHeader, IonCardTitle, IonGrid, IonRow, IonCol} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
 /* Core CSS required for Ionic components to work properly */
@@ -17,17 +17,13 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-
+import Exercise from './pages/excerise'
 /* Theme variables */
 import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
-    <IonGrid>
-      <IonRow>
-
-      </IonRow>
-    </IonGrid>
+    <Exercise />
   </IonApp>
 );
 

@@ -11,7 +11,7 @@ import { } from 'ionicons/icons'
 import '../theme/variables.css';
 
 // import Header from '../components/header' 
-
+import Exercise from '../components/excerciesCards'
 //interface for props 
 interface Props {
     //areas you can edit from App.tsx
@@ -21,6 +21,7 @@ interface Props {
 const Exercises: React.FC<Props> = props => {
 
 
+
     // Front End element for UI in the return statement 
     return(
         <IonContent>
@@ -28,50 +29,36 @@ const Exercises: React.FC<Props> = props => {
                 <IonRow>
                     <IonCol>
                         {/* <Header /> */}
-                        <IonHeader className="header ion-text-center">Exercises</IonHeader> 
+                        <IonHeader className="header ion-text-center" >Exercises</IonHeader> 
 
                     </IonCol>
                 </IonRow>
                 <IonRow>
                     <IonCol>
-                       <IonSearchbar />
+                       <IonSearchbar mode="ios"/>
                     </IonCol>
                 </IonRow>
-                <IonRow>
-                    <IonCol>
+                <IonRow >
+                    <IonCol size="12" className="exerciseButtonOne" size-sm="4">
                         <IonButton id="btn1"  size="small" shape="round" className="ion-text-center size ion-padding-start">
                             HITT
                         </IonButton>
                     </IonCol>
-                    <IonCol>
+                    <IonCol size="12" className="exerciseButtonTwo" size-sm="4">
                         <IonButton id="btn2" size="small" shape="round" className="size">
                             Compound
                         </IonButton>
                     </IonCol>
-                    <IonCol>
-                        <IonButton id="btn3" size="small" shape="round" className="size">
+                    <IonCol size="12" className="exerciseButtonThree" size-sm="4">
+                        <IonButton id="btn3" size="small" shape="round" className="size" >
                             Functional
                         </IonButton>
                     </IonCol>
                 </IonRow>
                 <IonRow>
-                    <IonCol>
-                        <IonCard>
-                            <IonCardHeader >
-                                <div >
-                                    Exercise
-                                </div>
-                            </IonCardHeader>
-                            <IonCardContent>
-                                <div className="ion-float-left description" >
-                                
-                                </div>
-                                <div className="ion-float-right description" >
-                                    <p>-------</p>
-                                </div>
-                            </IonCardContent>
-                        </IonCard>
-                    </IonCol>
+                <IonCol size="12">
+                   <Exercise />
+                </IonCol>
                 </IonRow>
             </IonGrid>
         </IonContent>

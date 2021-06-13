@@ -245,10 +245,23 @@ http://ionicframework.com/docs/theming/ */
   /* padding-bottom: 20px; */
 }
 .size{
-  width:100px;
+  width:120px;
 }
 ion-button{
   --background: rgb(179,220,61);
+
+}
+.exerciseButtonTwo{
+  display: flex;
+  justify-content: center;
+}
+.exerciseButtonOne{
+  display: flex;
+  justify-content: flex-start;
+}
+.exerciseButtonThree{
+  display: flex;
+  justify-content:flex-end;
 }
 #btn1{
   --background: rgb(225,129,75);
@@ -256,4 +269,22 @@ ion-button{
 #btn2{
   --background: rgb(82,173,224);
 
+}
+#btn3{
+  --background: rgb(179,220,61);
+  padding-right: 5px;
+}
+
+.repCircle{
+  background-color: rgb(179,220,61);
+  border-radius: 50%;
+  padding: 10px 10px;
+  color: white;
+
+}
+.repCircle p{
+  padding: 10px;
+}
+ion-card{
+  border-radius: 10px;
 }

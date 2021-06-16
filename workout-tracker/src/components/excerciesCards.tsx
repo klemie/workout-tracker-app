@@ -31,13 +31,13 @@ const Exercise: React.FC<Props> = props => {
             "description": "Description",
             "title": "Exercise 2",
             "reps": 2,
-            "type": "HIIT" 
+            "type": "hiit" 
         },
         "ex3" : {
-            "description": "Description",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.",
             "title": "Exercise 3",
             "reps": 5,
-            "type": "HIIT" 
+            "type": "compound" 
         }
     };
     let exArray = [exercises.ex1,exercises.ex2,exercises.ex3]
@@ -47,7 +47,7 @@ const Exercise: React.FC<Props> = props => {
         <div>
         {exArray.map((exer) =>(
             <div className="ion-padding" >
-                    <IonCard   key={exer.toString()} >
+                    <IonCard className="ion-no-margin" key={exer.toString()} >
                         <IonCardHeader>
                             <IonGrid className="ion-no-padding">
                                 <IonRow>
@@ -55,8 +55,7 @@ const Exercise: React.FC<Props> = props => {
                                         {exer.title}
                                     </IonCol>
                                     <IonCol size="6" className="exerciseButtonThree">
-                                        {/* Todo: add color change on type */}
-                                        <div className="repCircle exerciseButtonTwo">
+                                        <div id={exer.type.toString()} className="repCircle exerciseButtonTwo">
                                             x{exer.reps}
                                         </div>
                                     </IonCol>

@@ -280,11 +280,44 @@ ion-button{
   border-radius: 50%;
   padding: 10px 10px;
   color: white;
-
+}
+ion-card-header{
+  font-size: 20px;
+}
+ion-card-header .repCircle{
+  font-size: 12px;
 }
 .repCircle p{
   padding: 10px;
 }
 ion-card{
   border-radius: 10px;
+}
+#hiit{
+  background-color: rgb(225,129,75);
+}
+#compound{
+  background-color: rgb(82,173,224);
+}
+#functional{
+  background-color: rgb(179,220,61);
+}
+.fixed{
+  display: block;
+  position: fixed;
+  z-index: 2;
+  background-color:white;
+  box-shadow: #000000;
+}
+.exerciseContainer{
+  margin-top: 240px;
+}
+.search-bar{
+  width: 90%;
+  margin: auto;
+  float: left;
+}
+.add-btn{
+  width: 10px;
+  --border-radius: 50%;
 }

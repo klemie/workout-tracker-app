@@ -313,11 +313,24 @@ ion-card{
   margin-top: 240px;
 }
 .search-bar{
-  width: 90%;
+  width: 85%;
   margin: auto;
   float: left;
 }
 .add-btn{
   width: 10px;
   --border-radius: 50%;
+}
+.add-button{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: -10px;
+  color: grey;
+  --background: #e0e0e0;
+  
+}
+#btncolor{
+  color: grey;
+
 }

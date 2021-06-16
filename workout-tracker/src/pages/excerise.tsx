@@ -2,7 +2,7 @@
 
 import React from 'react';
 // You must import every ionic UI component you use in this file 
-import { IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonCardHeader, IonHeader, IonSearchbar, IonButton, IonIcon } from '@ionic/react';
+import { IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonCardHeader, IonHeader, IonSearchbar, IonButton, IonIcon, IonFabButton } from '@ionic/react';
 
 //Import icons if needed
 import { addOutline } from 'ionicons/icons'
@@ -39,10 +39,10 @@ const Exercises: React.FC<Props> = props => {
                 </IonRow>
                 <IonRow>
                     <IonCol>
-                       <IonSearchbar mode="ios" className="search-bar" />
-                       <IonButton  shape="round">
-                           <IonIcon slot="icon-only" size="small" className="add-btn ion-no-padding" icon={addOutline}></IonIcon>
-                       </IonButton>
+                       <IonSearchbar mode="ios" className="search-bar ion-no-padding-left" />
+                       <IonFabButton className="add-button ion-padding" >
+                           <span id="btncolor">+</span>
+                       </IonFabButton>
                     </IonCol>
                 </IonRow>
                 <IonRow >

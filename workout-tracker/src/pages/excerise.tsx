@@ -12,6 +12,8 @@ import '../theme/variables.css';
 
 // import Header from '../components/header' 
 import Exercise from '../components/excerciesCards'
+import Header from '../components/header';
+import TypeButtons from '../components/typeBtns'
 //interface for props 
 interface Props {
     //areas you can edit from App.tsx
@@ -19,51 +21,29 @@ interface Props {
 
 //function component declaration 
 const Exercises: React.FC<Props> = props => {
-    let mainBtnText = {
-        "h": "hiit",
-        "f": "functional",
-        "c": "compound"
-    }
+ 
 
 
     // Front End element for UI in the return statement 
     return(
         <IonContent >
-            <IonGrid className="fixed">
+            <IonGrid>
+                   <Header title="Excerises" />
                 <IonRow>
-                    <IonCol>
-                        {/* <Header /> */}
-                        <IonHeader className="ion-no-border header ion-text-center" >Exercises</IonHeader> 
-
+                    <IonCol size="10">
+                       <IonSearchbar mode="ios" className="ion-no-padding" />
+                      
                     </IonCol>
-                </IonRow>
-                <IonRow>
-                    <IonCol>
-                       <IonSearchbar mode="ios" className="search-bar ion-no-padding-left" />
-                       <IonFabButton className="add-button ion-padding" >
-                           <span id="btncolor">+</span>
-                       </IonFabButton>
-                    </IonCol>
-                </IonRow>
-                <IonRow >
-                    <IonCol size="4" className="exerciseButtonOne ion-padding-bottom" size-sm="4">
-                        <IonButton id="btn1"  size="small" shape="round" className="ion-text-center size ion-padding-start">
-                            {mainBtnText.h}
-                        </IonButton>
-                    </IonCol>
-                    <IonCol size="4" className="exerciseButtonTwo" size-sm="4">
-                        <IonButton id="btn2" size="small" shape="round" className="size">
-                            {mainBtnText.c}
-                        </IonButton>
-                    </IonCol>
-                    <IonCol size="4" className="exerciseButtonThree" size-sm="4">
-                        <IonButton id="btn3" size="small" shape="round" className="size" >
-                            {mainBtnText.f}
+                    <IonCol size="2">
+                        <IonButton shape="round" size="small" className="loadSaveBtns">
+                            <IonIcon slot="icon-only" icon={addOutline} />
+                            
                         </IonButton>
                     </IonCol>
                 </IonRow>
+                <TypeButtons />
             </IonGrid>
-            <div className="exerciseContainer">
+            <div>
                 <Exercise />
             </div>
         </IonContent>

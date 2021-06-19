@@ -241,8 +241,8 @@ http://ionicframework.com/docs/theming/ */
 .header{
   font-family: Lato;
   font-size: 40px;
-  padding-top: 50px;
-  /* padding-bottom: 20px; */
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 .size{
   width:120px;
@@ -262,17 +262,25 @@ ion-button{
 .exerciseButtonThree{
   display: flex;
   justify-content:flex-end;
+  padding: none;
+}
+.flexCenter{
+  display: flex;
+  justify-content:center;
+
 }
 #btn1{
+  height: 45px;
   --background: rgb(225,129,75);
 }
 #btn2{
+  height: 45px;
   --background: rgb(82,173,224);
 
 }
 #btn3{
+  height: 45px;
   --background: rgb(179,220,61);
-  padding-right: 5px;
 }
 
 .repCircle{
@@ -280,6 +288,7 @@ ion-button{
   border-radius: 50%;
   padding: 10px 10px;
   color: white;
+  width:40px;
 }
 ion-card-header{
   font-size: 20px;
@@ -333,4 +342,16 @@ ion-card{
 #btncolor{
   color: grey;
 
+}
+.loadSaveBtns{
+  height: 45px;
+  --background: #ededed;
+  color: #666666;
+}
+#workOutsSb{
+  padding-left: 16px;
+}
+#circuitcolor{
+  background-color: #e6e6e6;
+  color: #666666;
 }

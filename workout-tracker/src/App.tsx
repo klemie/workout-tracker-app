@@ -17,13 +17,19 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-import Exercise from './pages/excerise'
+/*Pages*/
+import Workout from './pages/workouts'
+import Exercises from './pages/excerise'
+
+
 /* Theme variables */
 import './theme/variables.css';
+import Exercise from './components/excerciesCards';
 
 const App: React.FC = () => (
   <IonApp>
-    <Exercise />
+    <Workout />
+    {/* <Exercises /> */}
   </IonApp>
 );
 

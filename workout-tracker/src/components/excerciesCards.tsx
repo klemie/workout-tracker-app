@@ -16,6 +16,7 @@ import { } from 'ionicons/icons'
 //interface for props 
 interface Props {
     //areas you can edit from App.tsx
+    
 }
 
 //function component declaration 
@@ -55,7 +56,7 @@ const Exercise: React.FC<Props> = props => {
                                         {exer.title}
                                     </IonCol>
                                     <IonCol size="6" className="exerciseButtonThree">
-                                        <div id={exer.type.toString()} className="repCircle exerciseButtonTwo">
+                                        <div id={exer.type} className="repCircle exerciseButtonTwo">
                                             x{exer.reps}
                                         </div>
                                     </IonCol>
